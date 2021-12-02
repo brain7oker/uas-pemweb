@@ -44,7 +44,7 @@
 <div class="row">
 
       <?php foreach ($kamar->result_array() as $value) { ?>
-      <div class="col-xl-3 col-sm-6 mb-3" >
+      <div class="col-xl-6 col-sm-12" >
 
       <div class="properties" style="background-color: white; ">
         <div class="text-black font-weight-bold center">
