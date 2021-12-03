@@ -24,9 +24,8 @@
     </ul>
     <ul class="navbar-nav ml-auto ml-md-0">
         
-
         <li class="nav-item dropdown no-arrow">
-            <a class="nav-link dropdown-toggle text-white" href="<?php echo site_url('login') ?>"  role="button" >
+            <a class="nav-link dropdown-toggle text-white" href="<?php echo site_url('login/logout')?>"  role="button" >
                 <i class="fas fa-user-circle fa-fw " ></i> LOG OUT
             </a>
             

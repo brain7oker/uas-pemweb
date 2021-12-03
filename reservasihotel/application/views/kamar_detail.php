@@ -5,7 +5,13 @@
 </head>
 <body id="page-top">
 
-<?php $this->load->view("tamu/navbar.php") ?>
+<?php 
+  if($this->session->userdata('status') == "loginuser"){
+    include('tamu/navbarlogged.php');
+  }else{
+    include('tamu/navbar.php');
+  }
+?>
 
 <div id="wrapper">
 
@@ -41,10 +47,6 @@
                        
               ?>
       <!--end search box-->
-
-
-
-    
 
 
 <div class="row">
@@ -181,11 +183,16 @@
 <div class="col-lg-12 col-sm-6 ">
 <div class="enquiry">
 
-  <?php
-
-  if ($status_kamar==0) { ?>
+  <?php if ($status_kamar==0) { ?>
 
   <h6><span class="fa fa-envelope"></span> Pemesanan Kamar</h6>
+  <?php 
+    if($this->session->userdata('status') == "loginuser"){
+      // include('tamu/navbarlogged.php');
+    }else{
+      // include('tamu/navbar.php');
+    }
+  ?>
   <?php echo form_open('welcome/reservasi/','role="form"'); ?>
     <input type="hidden" name="id_kamar" value="<?php echo $id_kamar;?>">
      <div class="input-group date form_date col-md-12" data-date="" data-date-format="dd/mm/yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
