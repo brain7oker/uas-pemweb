@@ -7,7 +7,7 @@ class Operator extends CI_Controller{
 	
 		if($this->session->userdata('status') != "loginoperator"){
 			$alert=$this->session->set_flashdata('alert', 'Anda belum Login');
-			redirect(base_url());
+			redirect(base_url("Login"));
 		}
 	}
  

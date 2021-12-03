@@ -1,13 +1,16 @@
 <?php 
- 
+
 class Admin extends CI_Controller{
  
 	function __construct(){
+		
 		parent::__construct();
-	
+		// if(strlen($_SESSION['login'])==0){ 
+		// 	header('location:Login.php');
+		// }
 		if($this->session->userdata('status') != "loginadmin"){
 			$alert=$this->session->set_flashdata('alert', 'Anda belum Login');
-			redirect(base_url());
+			redirect(base_url("Login"));
 		}
 	}
  
@@ -524,7 +527,10 @@ class Admin extends CI_Controller{
 		redirect(base_url().'admin/kamar');
 	}
 
-
+	function logout(){
+		$this->session->sess_destroy();
+		redirect(base_url(''));
+	}
 
 	// function kamar_kelas_edit($id_kelas_kamar){
 	// 	$where = array('id_kelas_kamar' => $id_kelas_kamar);

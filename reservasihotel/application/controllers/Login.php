@@ -46,6 +46,7 @@ class Login extends CI_Controller{
 			if($cek > 0){
 				$session = array('id_user_group' => $d->id_user_group, 'nama_user' => $d->nama_user, 'status' => 'loginadmin');
 				$this->session->set_userdata($session);
+				$_SESSION['login']=$_POST['username_user'];
 				redirect(base_url().'Admin');
 			}
 			else{
@@ -58,6 +59,7 @@ class Login extends CI_Controller{
 			if($cek > 0){
 				$session = array('id_user_group' => $d->id_user_group, 'nama_user' => $d->nama_user, 'status' => 'loginoperator');
 				$this->session->set_userdata($session);
+				$_SESSION['login']=$_POST['username_user'];
 				redirect(base_url().'Operator');
 			}
 			else{
@@ -78,7 +80,8 @@ class Login extends CI_Controller{
  
 	function logout(){
 		$this->session->sess_destroy();
-		redirect(base_url('v_login'));
+		// $session = array('id_user_group' => $d->id_user_group, 'nama_user' => $d->nama_user, 'status' => 'logout');
+		redirect(base_url(''));
 	}
 
 }
