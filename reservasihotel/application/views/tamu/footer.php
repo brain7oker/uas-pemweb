@@ -2,7 +2,7 @@
 <footer >
   <div class="container mx-auto">
     <div class="copyright text-center my-auto">
-      <span>Copyright © <a href="https://www.sarjanakomedi.com"><?php echo SITE_NAME ."</a> ". Date('Y') ?></span>
+      <span>Copyright CCFH<?php "</a> ". Date('Y') ?></span>
     </div>
   </div>
 </footer>
