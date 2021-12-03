@@ -7327,7 +7327,7 @@ button.bg-secondary:focus {
 }
 
 .bg-success {
-  background-color: #28a745 !important;
+  background-color: #007bff !important;
 }
 
 a.bg-success:hover, a.bg-success:focus,
@@ -10972,6 +10972,7 @@ body {
   width: 100%;
   padding-top: 1rem;
   padding-bottom: 80px;
+  background-color: aqua;
 }
 
 .scroll-to-top {
