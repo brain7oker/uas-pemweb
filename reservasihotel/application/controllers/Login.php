@@ -46,8 +46,18 @@ class Login extends CI_Controller{
 			if($cek > 0){
 				$session = array('id_user_group' => $d->id_user_group, 'nama_user' => $d->nama_user, 'status' => 'loginadmin');
 				$this->session->set_userdata($session);
-				$_SESSION['login']=$_POST['username_user'];
 				redirect(base_url().'Admin');
+			}
+			else{
+				$where = array('username_user' => $username_user, 'password_user' => md5($password_user), 'id_user_group' => 3 );
+			$data = $this->m_hotel->edit_data($where, 'user');
+			$d = $this->m_hotel->edit_data($where, 'user')->row();
+			$cek = $data->num_rows();
+			
+			if($cek > 0){
+				$session = array('id_user_group' => $d->id_user_group, 'nama_user' => $d->nama_user, 'status' => 'loginuser');
+				$this->session->set_userdata($session);
+				redirect(base_url().'Welcome');
 			}
 			else{
 				$where = array('username_user' => $username_user, 'password_user' => md5($password_user), 'id_user_group' => 2 );
@@ -55,16 +65,15 @@ class Login extends CI_Controller{
 			$d = $this->m_hotel->edit_data($where, 'user')->row();
 			$cek = $data->num_rows();
 
-
 			if($cek > 0){
 				$session = array('id_user_group' => $d->id_user_group, 'nama_user' => $d->nama_user, 'status' => 'loginoperator');
 				$this->session->set_userdata($session);
-				$_SESSION['login']=$_POST['username_user'];
 				redirect(base_url().'Operator');
 			}
 			else{
 				$this->session->set_flashdata('Alert', 'ih kamu mah');
 				redirect(base_url('login'));
+			}
 			}
 			}
 

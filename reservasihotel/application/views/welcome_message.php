@@ -4,8 +4,14 @@
   <?php $this->load->view("tamu/head.php") ?>
 </head>
 <body id="page-top">
+<?php 
+  if($this->session->userdata('status') == "loginuser"){
+    include('tamu/navbarlogged.php');
+  }else{
+    include('tamu/navbar.php');
+  }
+?>
 
-<?php $this->load->view("tamu/navbar.php") ?>
 
 <div id="wrapper">
 

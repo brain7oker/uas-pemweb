@@ -40,19 +40,19 @@
                   <div class="form-group">
                     <label class="col-lg-12">Nama User</label>
                        <div class="col-md-9">
-                            <input type="text" class="form-control" placeholder="masukkan nama user" name="nama_user">
+                            <input type="text" class="form-control" placeholder="masukkan nama" name="nama_user">
                         </div>
                   </div>
                    <div class="form-group">
                     <label class="col-lg-12">Email User</label>
                        <div class="col-md-9">
-                            <input type="text" class="form-control" placeholder="masukkan nama user" name="email_user">
+                            <input type="text" class="form-control" placeholder="masukkan email" name="email_user">
                         </div>
                   </div> 
                   <div class="form-group">
                     <label class="col-lg-12">Tlp User</label>
                        <div class="col-md-9">
-                            <input type="text" class="form-control" placeholder="masukkan nama user" name="tlp_user" min="1">
+                            <input type="text" class="form-control" placeholder="masukkan nomor" name="tlp_user" min="1">
                         </div>
                   </div> 
                 </div>
