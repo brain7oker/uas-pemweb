@@ -103,7 +103,7 @@ class Admin extends CI_Controller{
 	}
 
 	function user_berhasil_register(){
-		$id_user_group = $this->input->post('id_user_group');
+		$id_user_group = 3;
 		$nama_user = $this->input->post('nama_user');
 		$email_user = $this->input->post('email_user');
 		$tlp_user = $this->input->post('tlp_user');
