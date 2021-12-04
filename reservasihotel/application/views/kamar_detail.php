@@ -184,16 +184,10 @@
 <div class="enquiry">
 
   <?php if ($status_kamar==0) { ?>
-
   <h6><span class="fa fa-envelope"></span> Pemesanan Kamar</h6>
   <?php 
     if($this->session->userdata('status') == "loginuser"){
-      // include('tamu/navbarlogged.php');
-    }else{
-      // include('tamu/navbar.php');
-    }
-  ?>
-  <?php echo form_open('welcome/reservasi/','role="form"'); ?>
+      echo form_open('welcome/reservasi/','role="form"'); ?>
     <input type="hidden" name="id_kamar" value="<?php echo $id_kamar;?>">
      <div class="input-group date form_date col-md-12" data-date="" data-date-format="dd/mm/yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
        <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
@@ -214,22 +208,24 @@
                 <input type="text" class="form-control" name="nama_reservasi" placeholder="Nama"/>
                 <input type="number" class="form-control" name="tlp_reservasi" placeholder="Tlp"/>
                 <textarea rows="6" class="form-control" name="alamat_reservasi" placeholder="Alamat"></textarea>
-      <button type="submit" class="btn btn-primary" name="Submit">Booking Kamar</button>
+      <button type="submit" class="btn btn-primary" name="Submit">Reservasi Kamar</button>
      
-      <?php echo form_close();?>
+      <?php echo form_close();
+    }else{ ?>
+      <a class="btn btn-primary" href="<?php echo site_url('login') ?>"  role="button" >
+                <i class="fas fa-user-circle fa-fw " ></i> Login Dulu Yuk
+            </a>
 
-  <?php
-  }
-  else { ?>
+      <?php echo form_close();
+    }
+  ?>
+  <?php }else{ ?>
 
   <div class='alert alert-danger'>
-                                           <span>Kamar Not Avaliable</span>  
-                                        </div>
+    <span>Kamar Not Avaliable</span>  
+  </div>
 
-  <?php
-  }
-
-  ?>
+  <?php } ?>
   </div>
  </div>         
 </div>
