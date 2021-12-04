@@ -73,6 +73,11 @@ class Admin extends CI_Controller{
 		$this->load->view('admin/user_tambah.php' ,$data);
 	}
 
+	function register(){
+		$data['user'] = $this->db->query('SELECT a.*, b.* from user a join user_group b on a.id_user_group=b.id_user_group')->result();
+		$this->load->view('admin/register.php' ,$data);
+	}
+
 	function user_tambah_aksi(){
 		$id_user_group = $this->input->post('id_user_group');
 		$nama_user = $this->input->post('nama_user');
@@ -95,6 +100,30 @@ class Admin extends CI_Controller{
 
 		// mengalihkan halaman ke halaman data anggota
 		redirect(base_url().'admin/user');
+	}
+
+	function user_berhasil_register(){
+		$id_user_group = $this->input->post('id_user_group');
+		$nama_user = $this->input->post('nama_user');
+		$email_user = $this->input->post('email_user');
+		$tlp_user = $this->input->post('tlp_user');
+		$username_user = $this->input->post('username_user');
+		$password_user = $this->input->post('password_user');
+
+		$data = array(
+			'id_user_group' 	=> $id_user_group,
+			'nama_user' 		=> $nama_user,
+			'email_user' 		=> $email_user,
+			'tlp_user' 			=> $tlp_user,
+			'username_user' 	=> $username_user,
+			'password_user' 	=> md5($password_user)
+			
+		);
+
+		$this->m_hotel->insert_data($data,'user');
+
+		// mengalihkan halaman ke halaman data anggota
+		redirect(base_url().'login');
 	}
 
 	function user_edit($id_user){

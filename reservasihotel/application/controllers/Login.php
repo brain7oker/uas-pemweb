@@ -7,31 +7,13 @@ class Login extends CI_Controller{
 	
 		
 	}
- 
+
 	function index(){
 		$this->load->view('v_login');
 	}
- 
+
 
 	function aksi_login(){
-
-		// $this->form_validation->set_rules('username_user','Username','required');
-		// $this->form_validation->set_rules('password_user','Password','required');
-
-		// if ($this->form_validation->run() == FALSE) {
-
-		// 	redirect(base_url('login'));
-
-		// }
-		// else {
-
-
-		// 	$username_user = $this->input->post('username_user');
-		// 	$password_user = md5($this->input->post('password_user'));
-
-		// 	$this->m_login->CekLogin($username_user,$password_user);
-
-		// }
 		$username_user = $this->input->post('username_user');
 		$password_user = $this->input->post('password_user');
 		$this->form_validation->set_rules('username_user','Username','required');

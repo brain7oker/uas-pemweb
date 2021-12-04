@@ -13,23 +13,21 @@
 
     <!-- Navbar -->
      <ul class="navbar-nav ml-auto ml-md-0">
-        
-
         <li class="nav-item dropdown no-arrow">
             <a class="nav-link dropdown-toggle text-white" href="<?php echo site_url('welcome/saran') ?>"  role="button" >
-                <i class="fas fa-envelope-open -circle fa-fw"></i> KRITIK & SARAN
-            </a>
-            
+                <i class="fas fa-envelope-open -circle fa-fw"></i> KRITIK & SARAN</a>
         </li>
     </ul>
     <ul class="navbar-nav ml-auto ml-md-0">
-        
-
         <li class="nav-item dropdown no-arrow">
             <a class="nav-link dropdown-toggle text-white" href="<?php echo site_url('login') ?>"  role="button" >
-                <i class="fas fa-user-circle fa-fw " ></i> LOGIN
-            </a>
-            
+                <i class="fas fa-user-circle fa-fw " ></i> LOGIN</a>
+        </li>
+    </ul>
+    <ul class="navbar-nav ml-auto ml-md-0">
+        <li class="nav-item dropdown no-arrow">
+            <a class="nav-link dropdown-toggle text-white" href="<?php echo site_url('register') ?>"  role="button" >
+                <i class="fas fa-user-circle fa-fw " ></i> Register</a>
         </li>
     </ul>
 
