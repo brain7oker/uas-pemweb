@@ -134,4 +134,4 @@ $autoload['language'] = array();
 */
 $autoload['model'] = array('m_hotel', 'm_tamu', 'm_login');
 
-define('SITE_NAME', 'Amanuba Hotel');
+define('SITE_NAME', 'CCFH Resort');
