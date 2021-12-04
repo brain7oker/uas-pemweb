@@ -1072,6 +1072,7 @@ section {
 }
 .chefs .member .member-info {
   position: absolute;
+  up: 10px;
   bottom: -80px;
   left: 20px;
   right: 20px;

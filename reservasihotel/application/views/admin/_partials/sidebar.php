@@ -14,7 +14,6 @@
             <span>KAMAR</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="<?php echo site_url('admin/Kamar_kelas') ?>">KAMAR KELAS</a>
             <a class="dropdown-item" href="<?php echo site_url('admin/Kamar') ?>">KAMAR</a>
         </div>
     </li>
@@ -42,7 +41,6 @@
             <i class="fas fa-fw fa-cog"></i>
             <span>PENGATURAN</span></a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="<?php echo site_url('admin/user_group') ?>">USER GROUP</a>
             <a class="dropdown-item" href="<?php echo site_url('admin/user') ?>">USER</a>
         </div>
     </li>

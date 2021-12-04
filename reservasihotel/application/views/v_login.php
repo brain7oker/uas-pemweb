@@ -48,12 +48,6 @@
           </div>
           <input class="btn btn-primary btn-block" type="submit" value="login">
         </form>
-        <ul class="navbar-nav ml-auto ml-md-0">
-          <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle text-white" href="<?php echo site_url('login') ?>"  role="button" >
-                  <i class="fas fa-user-circle fa-fw " ></i> LOGIN</a>
-          </li>
-         </ul>
          
       </div>
     </div>
