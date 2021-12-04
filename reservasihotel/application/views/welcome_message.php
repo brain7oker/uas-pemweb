@@ -49,9 +49,9 @@
 <div class="row">
 
       <?php foreach ($kamar->result_array() as $value) { ?>
-      <div class="col-xl-6 col-sm-12" >
+      <div class="col-xl-3 col-sm-6 col-xs-12" >
 
-      <div class="properties" style="background-color: white; ">
+      <div class="properties" style="background-color: white; border-radius: 20px ">
         <div class="text-black font-weight-bold center">
              <img src="<?php echo base_url();?>/assets/images/<?php echo $value['nama_kamar_gambar'];?>" class="img-responsive" alt="properties" style="width:278.5px;height:150px;">
             <?php

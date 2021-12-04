@@ -206,6 +206,7 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
+  border-radius: 20px;
 }
 
 svg {
@@ -627,8 +628,10 @@ pre code {
 .col-xl-auto {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 .col {
@@ -10972,7 +10975,7 @@ body {
   width: 100%;
   padding-top: 1rem;
   padding-bottom: 80px;
-  background-color:aqua;
+  background-color:whitesmoke;
 }
 
 .scroll-to-top {
