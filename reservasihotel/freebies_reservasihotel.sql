@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 04 Des 2021 pada 16.54
--- Versi server: 10.4.20-MariaDB
--- Versi PHP: 8.0.9
+-- Generation Time: Dec 05, 2021 at 06:46 PM
+-- Server version: 10.4.20-MariaDB
+-- PHP Version: 8.0.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kamar`
+-- Table structure for table `kamar`
 --
 
 CREATE TABLE `kamar` (
@@ -37,7 +37,7 @@ CREATE TABLE `kamar` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `kamar`
+-- Dumping data for table `kamar`
 --
 
 INSERT INTO `kamar` (`id_kamar`, `no_kamar`, `harga_kamar`, `fasilitas_kamar`, `status_kamar`, `id_kelas_kamar`) VALUES
@@ -89,7 +89,7 @@ INSERT INTO `kamar` (`id_kamar`, `no_kamar`, `harga_kamar`, `fasilitas_kamar`, `
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kamar_gambar`
+-- Table structure for table `kamar_gambar`
 --
 
 CREATE TABLE `kamar_gambar` (
@@ -99,62 +99,62 @@ CREATE TABLE `kamar_gambar` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `kamar_gambar`
+-- Dumping data for table `kamar_gambar`
 --
 
-INSERT INTO 'kamar_gambar' (`id_kamar_gambar`, `nama_kamar_gambar`, `id_kamar`) VALUES
-(1, 'nama_kamar_gambar1.jpg', 1),
-(4, 'nama_kamar_gambar2.jpg', 2),
-(5, 'nama_kamar_gambar3.jpg', 3),
-(6, 'nama_kamar_gambar4.jpg', 4),
-(7, 'nama_kamar_gambar5.jpg', 5),
-(8, 'nama_kamar_gambar6.jpg', 6),
-(9, 'nama_kamar_gambar7.jpg', 2),
-(10, 'nama_kamar_gambar8.jpg', 7),
-(11, 'nama_kamar_gambar9.jpg', 8),
-(12, 'nama_kamar_gambar10.jpg', 9),
-(13, 'nama_kamar_gambar11.jpg', 10),
-(14, 'nama_kamar_gambar12.jpg', 11),
-(15, 'nama_kamar_gambar13.jpg', 12),
-(16, 'nama_kamar_gambar14.jpg', 13),
-(17, 'nama_kamar_gambar15.jpg', 14),
-(18, 'nama_kamar_gambar16.jpg', 15),
-(19, 'nama_kamar_gambar17.jpg', 16),
-(20, 'nama_kamar_gambar18.jpg', 17),
-(21, 'nama_kamar_gambar19.jpg', 18),
-(22, 'nama_kamar_gambar20.jpg', 19),
-(23, 'nama_kamar_gambar21.jpg', 20),
-(24, 'nama_kamar_gambar22.jpg', 21),
-(25, 'nama_kamar_gambar23.jpg', 22),
-(26, 'nama_kamar_gambar24.jpg', 23),
-(27, 'nama_kamar_gambar25.jpg', 24),
-(28, 'nama_kamar_gambar26.jpg', 25),
-(29, 'nama_kamar_gambar27.jpg', 26),
-(30, 'nama_kamar_gambar28.jpg', 27),
-(31, 'nama_kamar_gambar29.jpg', 28),
-(32, 'nama_kamar_gambar30.jpg', 29),
-(33, 'nama_kamar_gambar31.jpg', 30),
-(34, 'nama_kamar_gambar32.jpg', 31),
-(35, 'nama_kamar_gambar33.jpg', 32),
-(36, 'nama_kamar_gambar34.jpg', 33),
-(37, 'nama_kamar_gambar35.jpg', 34),
-(38, 'nama_kamar_gambar36.jpg', 35),
-(39, 'nama_kamar_gambar37.jpg', 36),
-(40, 'nama_kamar_gambar38.jpg', 37),
-(41, 'nama_kamar_gambar39.jpg', 38),
-(42, 'nama_kamar_gambar40.jpg', 39),
-(43, 'nama_kamar_gambar41.jpg', 40),
-(44, 'nama_kamar_gambar42.jpg', 41),
-(45, 'nama_kamar_gambar43.jpg', 42),
-(46, 'nama_kamar_gambar44.jpg', 43),
-(47, 'nama_kamar_gambar45.jpg', 44),
-(48, 'nama_kamar_gambar46.jpg', 1),
-(49, 'nama_kamar_gambar47.jpg', 1);
+INSERT INTO `kamar_gambar` (`id_kamar_gambar`, `nama_kamar_gambar`, `id_kamar`) VALUES
+(1, '1.jpg', 1),
+(4, '2.jpg', 2),
+(5, '3.jpg', 3),
+(6, '4.jpg', 4),
+(7, '5.jpg', 5),
+(8, '6.jpg', 6),
+(9, '7.jpg', 2),
+(10, '8.jpg', 7),
+(11, '9.jpg', 8),
+(12, '10.jpg', 9),
+(13, '11.jpg', 10),
+(14, '12.jpg', 11),
+(15, '13.jpg', 12),
+(16, '14.jpg', 13),
+(17, '15.jpg', 14),
+(18, '16.jpg', 15),
+(19, '17.jpg', 16),
+(20, '18.jpg', 17),
+(21, '19.jpg', 18),
+(22, '20.jpg', 19),
+(23, '21.jpg', 20),
+(24, '22.jpg', 21),
+(25, '23.jpg', 22),
+(26, '24.jpg', 23),
+(27, '25.jpg', 24),
+(28, '26.jpg', 25),
+(29, '27.jpg', 26),
+(30, '28.jpg', 27),
+(31, '29.jpg', 28),
+(32, '30.jpg', 29),
+(33, '31.jpg', 30),
+(34, '32.jpg', 31),
+(35, '33.jpg', 32),
+(36, '34.jpg', 33),
+(37, '35.jpg', 34),
+(38, '36.jpg', 35),
+(39, '37.jpg', 36),
+(40, '38.jpg', 37),
+(41, '39.jpg', 38),
+(42, '40.jpg', 39),
+(43, '41.jpg', 40),
+(44, '42.jpg', 41),
+(45, '43.jpg', 42),
+(46, '44.jpg', 43),
+(47, '45.jpg', 44),
+(48, '46.jpg', 1),
+(49, '47.jpg', 1);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kelas_kamar`
+-- Table structure for table `kelas_kamar`
 --
 
 CREATE TABLE `kelas_kamar` (
@@ -163,7 +163,7 @@ CREATE TABLE `kelas_kamar` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `kelas_kamar`
+-- Dumping data for table `kelas_kamar`
 --
 
 INSERT INTO `kelas_kamar` (`id_kelas_kamar`, `nama_kelas_kamar`) VALUES
@@ -174,7 +174,7 @@ INSERT INTO `kelas_kamar` (`id_kelas_kamar`, `nama_kelas_kamar`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `reservasi`
+-- Table structure for table `reservasi`
 --
 
 CREATE TABLE `reservasi` (
@@ -189,7 +189,7 @@ CREATE TABLE `reservasi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `reservasi`
+-- Dumping data for table `reservasi`
 --
 
 INSERT INTO `reservasi` (`id_reservasi`, `nama_reservasi`, `tlp_reservasi`, `alamat_reservasi`, `tgl_reservasi_masuk`, `tgl_reservasi_keluar`, `id_kamar`, `status_reservasi`) VALUES
@@ -200,7 +200,7 @@ INSERT INTO `reservasi` (`id_reservasi`, `nama_reservasi`, `tlp_reservasi`, `ala
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `reservasi_pembayaran`
+-- Table structure for table `reservasi_pembayaran`
 --
 
 CREATE TABLE `reservasi_pembayaran` (
@@ -213,7 +213,7 @@ CREATE TABLE `reservasi_pembayaran` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `reservasi_pembayaran`
+-- Dumping data for table `reservasi_pembayaran`
 --
 
 INSERT INTO `reservasi_pembayaran` (`id_reservasi_pembayaran`, `tgl_pembayaran`, `nominal_pembayaran`, `uang_bayar`, `kembalian`, `id_reservasi`) VALUES
@@ -224,7 +224,7 @@ INSERT INTO `reservasi_pembayaran` (`id_reservasi_pembayaran`, `tgl_pembayaran`,
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `saran`
+-- Table structure for table `saran`
 --
 
 CREATE TABLE `saran` (
@@ -236,7 +236,7 @@ CREATE TABLE `saran` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `saran`
+-- Dumping data for table `saran`
 --
 
 INSERT INTO `saran` (`id_saran`, `nama_saran`, `email_saran`, `tlp_saran`, `isi_saran`) VALUES
@@ -245,7 +245,7 @@ INSERT INTO `saran` (`id_saran`, `nama_saran`, `email_saran`, `tlp_saran`, `isi_
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user`
+-- Table structure for table `user`
 --
 
 CREATE TABLE `user` (
@@ -259,7 +259,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `user`
+-- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id_user`, `nama_user`, `email_user`, `tlp_user`, `username_user`, `password_user`, `id_user_group`) VALUES
@@ -273,7 +273,7 @@ INSERT INTO `user` (`id_user`, `nama_user`, `email_user`, `tlp_user`, `username_
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user_group`
+-- Table structure for table `user_group`
 --
 
 CREATE TABLE `user_group` (
@@ -282,7 +282,7 @@ CREATE TABLE `user_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `user_group`
+-- Dumping data for table `user_group`
 --
 
 INSERT INTO `user_group` (`id_user_group`, `nama_user_group`) VALUES
@@ -295,101 +295,101 @@ INSERT INTO `user_group` (`id_user_group`, `nama_user_group`) VALUES
 --
 
 --
--- Indeks untuk tabel `kamar`
+-- Indexes for table `kamar`
 --
 ALTER TABLE `kamar`
   ADD PRIMARY KEY (`id_kamar`);
 
 --
--- Indeks untuk tabel `kamar_gambar`
+-- Indexes for table `kamar_gambar`
 --
 ALTER TABLE `kamar_gambar`
   ADD PRIMARY KEY (`id_kamar_gambar`);
 
 --
--- Indeks untuk tabel `kelas_kamar`
+-- Indexes for table `kelas_kamar`
 --
 ALTER TABLE `kelas_kamar`
   ADD PRIMARY KEY (`id_kelas_kamar`);
 
 --
--- Indeks untuk tabel `reservasi`
+-- Indexes for table `reservasi`
 --
 ALTER TABLE `reservasi`
   ADD PRIMARY KEY (`id_reservasi`);
 
 --
--- Indeks untuk tabel `reservasi_pembayaran`
+-- Indexes for table `reservasi_pembayaran`
 --
 ALTER TABLE `reservasi_pembayaran`
   ADD PRIMARY KEY (`id_reservasi_pembayaran`);
 
 --
--- Indeks untuk tabel `saran`
+-- Indexes for table `saran`
 --
 ALTER TABLE `saran`
   ADD PRIMARY KEY (`id_saran`);
 
 --
--- Indeks untuk tabel `user`
+-- Indexes for table `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id_user`);
 
 --
--- Indeks untuk tabel `user_group`
+-- Indexes for table `user_group`
 --
 ALTER TABLE `user_group`
   ADD PRIMARY KEY (`id_user_group`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `kamar`
+-- AUTO_INCREMENT for table `kamar`
 --
 ALTER TABLE `kamar`
   MODIFY `id_kamar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
--- AUTO_INCREMENT untuk tabel `kamar_gambar`
+-- AUTO_INCREMENT for table `kamar_gambar`
 --
 ALTER TABLE `kamar_gambar`
   MODIFY `id_kamar_gambar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 
 --
--- AUTO_INCREMENT untuk tabel `kelas_kamar`
+-- AUTO_INCREMENT for table `kelas_kamar`
 --
 ALTER TABLE `kelas_kamar`
   MODIFY `id_kelas_kamar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT untuk tabel `reservasi`
+-- AUTO_INCREMENT for table `reservasi`
 --
 ALTER TABLE `reservasi`
   MODIFY `id_reservasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT untuk tabel `reservasi_pembayaran`
+-- AUTO_INCREMENT for table `reservasi_pembayaran`
 --
 ALTER TABLE `reservasi_pembayaran`
   MODIFY `id_reservasi_pembayaran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT untuk tabel `saran`
+-- AUTO_INCREMENT for table `saran`
 --
 ALTER TABLE `saran`
   MODIFY `id_saran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT untuk tabel `user`
+-- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
   MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT untuk tabel `user_group`
+-- AUTO_INCREMENT for table `user_group`
 --
 ALTER TABLE `user_group`
   MODIFY `id_user_group` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;

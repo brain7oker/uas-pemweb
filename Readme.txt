@@ -8,7 +8,7 @@ pw : operator
 
 Pelanggan
 id : charlie
-pw : 123
+pw : charlie
 
 
 db name : id18064173_db_ccfhresort
