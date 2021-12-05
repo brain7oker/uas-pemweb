@@ -25,7 +25,7 @@
             <div class="table-responsive">
               <form method="post" action="<?php echo base_url().'admin/user_berhasil_register'; ?>">
                 <div class="row">
-                  <div class="col-lg-7 col-sm-8 ">
+                  <div class="col-lg-6 ">
                   <div class="form-group">
                       <label class="col-lg-12">Masukkan Data mu</label>
                       <div class="col-md-9">
