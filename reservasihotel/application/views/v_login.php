@@ -23,7 +23,9 @@
 
   <div class="container">
     <div class="card card-login mx-auto mt-5">
-      <div class="card-header">Login</div>
+      <div class="card-header">
+        <a href="<?php echo site_url('Welcome') ?>">Back</a>
+      </div>
       <div class="card-body">
         <form action="<?php echo base_url('login/aksi_login'); ?>" method="post">
           <div class="form-group">

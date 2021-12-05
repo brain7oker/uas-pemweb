@@ -15,11 +15,12 @@
 
     <div class="container-fluid">
 
-    <?php $this->load->view("admin/_partials/breadcrumb.php") ?>
+    
     <div class="card mb-3">
           <div class="card-header">
             <i class="fas fa-table"></i>
-            Register New User</div>
+            Register New User / 
+            <a href="<?php echo site_url('Welcome') ?>">Back</a></div>
 
           <div class="card-body">
             <div class="table-responsive">
