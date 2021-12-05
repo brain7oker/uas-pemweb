@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0.1
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 10, 2019 at 05:59 PM
--- Server version: 10.1.32-MariaDB
--- PHP Version: 5.6.36
+-- Waktu pembuatan: 04 Des 2021 pada 16.54
+-- Versi server: 10.4.20-MariaDB
+-- Versi PHP: 8.0.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -25,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kamar`
+-- Struktur dari tabel `kamar`
 --
 
 CREATE TABLE `kamar` (
@@ -38,17 +37,17 @@ CREATE TABLE `kamar` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `kamar`
+-- Dumping data untuk tabel `kamar`
 --
 
 INSERT INTO `kamar` (`id_kamar`, `no_kamar`, `harga_kamar`, `fasilitas_kamar`, `status_kamar`, `id_kelas_kamar`) VALUES
-(1, '110', 981818, '<p><span style=\"font-size: 1rem;\">Kamar dirancang demi kenyamanan anda selama menginap . Dilengkapi fasilitas seperti AC, TV dan lain-lain.&nbsp;</span><br></p><p>Fasilitas Kamar :&nbsp;</p> AC&nbsp;, TV, Minibar,&nbsp;Brankas,&nbsp;Tempat tidur yang nyaman, Kamar mandi, Akses internet', 1, 1),
+(1, '110', 981818, '<p><span style=\"font-size: 1rem;\">Kamar dirancang demi kenyamanan anda selama menginap . Dilengkapi fasilitas seperti AC, TV dan lain-lain.&nbsp;</span><br></p><p>Fasilitas Kamar :&nbsp;</p> AC&nbsp;, TV, Minibar,&nbsp;Brankas,&nbsp;Tempat tidur yang nyaman, Kamar mandi, Akses internet', 0, 1),
 (2, '118', 981818, '<p>Kamar dirancang demi kenyamanan anda selama menginap . Dilengkapi fasilitas seperti AC, TV dan lain-lain. </p><p>Fasilitas Kamar : </p> AC , TV, Minibar, Brankas, Tempat tidur yang nyaman, Kamar mandi, Akses internet', 0, 1),
 (3, '210', 981818, '<p>Kamar dirancang demi kenyamanan anda selama menginap . Dilengkapi fasilitas seperti AC, TV dan lain-lain. </p><p>Fasilitas Kamar : </p> AC , TV, Minibar, Brankas, Tempat tidur yang nyaman, Kamar mandi, Akses internet', 0, 1),
 (4, '218', 981818, '<p>Kamar dirancang demi kenyamanan anda selama menginap . Dilengkapi fasilitas seperti AC, TV dan lain-lain. </p><p>Fasilitas Kamar : </p> AC , TV, Minibar, Brankas, Tempat tidur yang nyaman, Kamar mandi, Akses internet', 0, 1),
 (5, '309', 981818, '<p>Kamar dirancang demi kenyamanan anda selama menginap . Dilengkapi fasilitas seperti AC, TV dan lain-lain. </p><p>Fasilitas Kamar : </p> AC , TV, Minibar, Brankas, Tempat tidur yang nyaman, Kamar mandi, Akses internet', 0, 1),
-(6, '316', 981818, '<p>Kamar dirancang demi kenyamanan anda selama menginap . Dilengkapi fasilitas seperti AC, TV dan lain-lain. </p><p>Fasilitas Kamar : </p> AC , TV, Minibar, Brankas, Tempat tidur yang nyaman, Kamar mandi, Akses internet', 1, 1),
-(7, '109', 454545, '<p>Kamar dirancang demi kenyamanan anda selama menginap . Dilengkapi fasilitas seperti AC, TV dan lain-lain. </p><p>Fasilitas Kamar : </p> AC , TV, Minibar, Brankas, Tempat tidur yang nyaman, Kamar mandi, Akses internet dan Tanpa Sarapan', 0, 3),
+(6, '316', 981818, '<p>Kamar dirancang demi kenyamanan anda selama menginap . Dilengkapi fasilitas seperti AC, TV dan lain-lain. </p><p>Fasilitas Kamar : </p> AC , TV, Minibar, Brankas, Tempat tidur yang nyaman, Kamar mandi, Akses internet', 0, 1),
+(7, '109', 454545, '<p>Kamar dirancang demi kenyamanan anda selama menginap . Dilengkapi fasilitas seperti AC, TV dan lain-lain. </p><p>Fasilitas Kamar : </p> AC , TV, Minibar, Brankas, Tempat tidur yang nyaman, Kamar mandi, Akses internet dan Tanpa Sarapan', 1, 3),
 (8, '209', 454545, '<p>Kamar dirancang demi kenyamanan anda selama menginap . Dilengkapi fasilitas seperti AC, TV dan lain-lain. </p><p>Fasilitas Kamar : </p> AC , TV, Minibar, Brankas, Tempat tidur yang nyaman, Kamar mandi, Akses internet dan Tanpa Sarapan', 0, 3),
 (9, '101', 568595, '<p>Kamar dirancang demi kenyamanan anda selama menginap . Dilengkapi fasilitas seperti AC, TV dan lain-lain. </p><p>Fasilitas Kamar : </p> AC , TV, Minibar, Brankas, Tempat tidur yang nyaman, Kamar mandi, Akses internet, Dengan Sarapan', 0, 2),
 (10, '102', 568595, '<p>Kamar dirancang demi kenyamanan anda selama menginap . Dilengkapi fasilitas seperti AC, TV dan lain-lain. </p><p>Fasilitas Kamar : </p> AC , TV, Minibar, Brankas, Tempat tidur yang nyaman, Kamar mandi, Akses internet, Dengan Sarapan', 0, 2),
@@ -83,14 +82,14 @@ INSERT INTO `kamar` (`id_kamar`, `no_kamar`, `harga_kamar`, `fasilitas_kamar`, `
 (39, '308', 568595, '<p>Kamar dirancang demi kenyamanan anda selama menginap . Dilengkapi fasilitas seperti AC, TV dan lain-lain. </p><p>Fasilitas Kamar : </p> AC , TV, Minibar, Brankas, Tempat tidur yang nyaman, Kamar mandi, Akses internet, Dengan Sarapan', 0, 2),
 (40, '311', 568595, '<p>Kamar dirancang demi kenyamanan anda selama menginap . Dilengkapi fasilitas seperti AC, TV dan lain-lain. </p><p>Fasilitas Kamar : </p> AC , TV, Minibar, Brankas, Tempat tidur yang nyaman, Kamar mandi, Akses internet, Dengan Sarapan', 0, 2),
 (41, '312', 568595, '<p>Kamar dirancang demi kenyamanan anda selama menginap . Dilengkapi fasilitas seperti AC, TV dan lain-lain. </p><p>Fasilitas Kamar : </p> AC , TV, Minibar, Brankas, Tempat tidur yang nyaman, Kamar mandi, Akses internet, Dengan Sarapan', 0, 2),
-(42, '315', 568595, '<p>Kamar dirancang demi kenyamanan anda selama menginap . Dilengkapi fasilitas seperti AC, TV dan lain-lain. </p><p>Fasilitas Kamar : </p> AC , TV, Minibar, Brankas, Tempat tidur yang nyaman, Kamar mandi, Akses internet, Dengan Sarapan', 1, 2),
+(42, '315', 568595, '<p>Kamar dirancang demi kenyamanan anda selama menginap . Dilengkapi fasilitas seperti AC, TV dan lain-lain. </p><p>Fasilitas Kamar : </p> AC , TV, Minibar, Brankas, Tempat tidur yang nyaman, Kamar mandi, Akses internet, Dengan Sarapan', 0, 2),
 (43, '316', 568595, '<p>Kamar dirancang demi kenyamanan anda selama menginap . Dilengkapi fasilitas seperti AC, TV dan lain-lain. </p><p>Fasilitas Kamar : </p> AC , TV, Minibar, Brankas, Tempat tidur yang nyaman, Kamar mandi, Akses internet, Dengan Sarapan', 0, 2),
 (44, '317', 568595, '<p>Kamar dirancang demi kenyamanan anda selama menginap . Dilengkapi fasilitas seperti AC, TV dan lain-lain. </p><p>Fasilitas Kamar : </p> AC , TV, Minibar, Brankas, Tempat tidur yang nyaman, Kamar mandi, Akses internet, Dengan Sarapan', 0, 2);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kamar_gambar`
+-- Struktur dari tabel `kamar_gambar`
 --
 
 CREATE TABLE `kamar_gambar` (
@@ -100,62 +99,62 @@ CREATE TABLE `kamar_gambar` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `kamar_gambar`
+-- Dumping data untuk tabel `kamar_gambar`
 --
 
 INSERT INTO `kamar_gambar` (`id_kamar_gambar`, `nama_kamar_gambar`, `id_kamar`) VALUES
-(1, 'nama_kamar_gambar1574452364.jpg', 1),
-(4, 'nama_kamar_gambar1574464177.jpg', 2),
-(5, 'nama_kamar_gambar1574464197.jpeg', 3),
-(6, 'nama_kamar_gambar1574464209.jpg', 4),
-(7, 'nama_kamar_gambar1574464217.jpg', 5),
-(8, 'nama_kamar_gambar1574464228.jpg', 6),
-(9, 'nama_kamar_gambar1574464551.jpg', 2),
-(10, 'nama_kamar_gambar1574692697.jpg', 7),
-(11, 'nama_kamar_gambar1574692704.jpg', 8),
-(12, 'nama_kamar_gambar1574692715.jpg', 9),
-(13, 'nama_kamar_gambar1574692739.jpg', 10),
-(14, 'nama_kamar_gambar1574700111.jpg', 11),
-(15, 'nama_kamar_gambar1574700126.jpg', 12),
-(16, 'nama_kamar_gambar1574700138.jpg', 13),
-(17, 'nama_kamar_gambar1574700156.jpg', 14),
-(18, 'nama_kamar_gambar1574700164.jpg', 15),
-(19, 'nama_kamar_gambar1574700173.jpg', 16),
-(20, 'nama_kamar_gambar1574700183.jpg', 17),
-(21, 'nama_kamar_gambar1574700195.jpeg', 18),
-(22, 'nama_kamar_gambar1574700204.jpg', 19),
-(23, 'nama_kamar_gambar1574700212.jpg', 20),
-(24, 'nama_kamar_gambar1574700221.jpg', 21),
-(25, 'nama_kamar_gambar1574700229.jpg', 22),
-(26, 'nama_kamar_gambar1574700237.jpg', 23),
-(27, 'nama_kamar_gambar1574700247.jpg', 24),
-(28, 'nama_kamar_gambar1574700254.jpg', 25),
-(29, 'nama_kamar_gambar1574700263.jpg', 26),
-(30, 'nama_kamar_gambar1574700274.jpg', 27),
-(31, 'nama_kamar_gambar1574700281.jpg', 28),
-(32, 'nama_kamar_gambar1574700289.jpg', 29),
-(33, 'nama_kamar_gambar1574700298.jpeg', 30),
-(34, 'nama_kamar_gambar1574700306.jpeg', 31),
-(35, 'nama_kamar_gambar1574700314.jpg', 32),
-(36, 'nama_kamar_gambar1574700322.jpg', 33),
-(37, 'nama_kamar_gambar1574700331.jpg', 34),
-(38, 'nama_kamar_gambar1574700338.jpg', 35),
-(39, 'nama_kamar_gambar1574700345.jpg', 36),
-(40, 'nama_kamar_gambar1574700353.jpg', 37),
-(41, 'nama_kamar_gambar1574700360.jpg', 38),
-(42, 'nama_kamar_gambar1574700367.jpg', 39),
-(43, 'nama_kamar_gambar1574700377.jpg', 40),
-(44, 'nama_kamar_gambar1574700387.jpg', 41),
-(45, 'nama_kamar_gambar1574700395.jpg', 42),
-(46, 'nama_kamar_gambar1574700403.jpg', 43),
-(47, 'nama_kamar_gambar1574700410.jpg', 44),
-(48, 'nama_kamar_gambar1574752414.jpg', 1),
-(49, 'nama_kamar_gambar1574752424.jpg', 1);
+(1, '1.jpg', 1),
+(4, '2.jpg', 2),
+(5, '3.jpeg', 3),
+(6, '4.jpg', 4),
+(7, '5.jpg', 5),
+(8, '6.jpg', 6),
+(9, '7.jpg', 2),
+(10, '8.jpg', 7),
+(11, '9.jpg', 8),
+(12, '10.jpg', 9),
+(13, '11.jpg', 10),
+(14, '12.jpg', 11),
+(15, '13.jpg', 12),
+(16, '14.jpg', 13),
+(17, '15.jpg', 14),
+(18, '16.jpg', 15),
+(19, '17.jpg', 16),
+(20, '18.jpg', 17),
+(21, '19.jpg', 18),
+(22, '20.jpg', 19),
+(23, '21.jpg', 20),
+(24, '22.jpg', 21),
+(25, '23.jpg', 22),
+(26, '24.jpg', 23),
+(27, '25.jpg', 24),
+(28, '26.jpg', 25),
+(29, '27.jpg', 26),
+(30, '28.jpg', 27),
+(31, '29.jpg', 28),
+(32, '30.jpg', 29),
+(33, '31.jpg', 30),
+(34, '32.jpg', 31),
+(35, '33.jpg', 32),
+(36, '34.jpg', 33),
+(37, '35.jpg', 34),
+(38, '36.jpg', 35),
+(39, '37.jpg', 36),
+(40, '38.jpg', 37),
+(41, '39.jpg', 38),
+(42, '40.jpg', 39),
+(43, '41.jpg', 40),
+(44, '42.jpg', 41),
+(45, '43.jpg', 42),
+(46, '44.jpg', 43),
+(47, '45.jpg', 44),
+(48, '46.jpg', 1),
+(49, '47.jpg', 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kelas_kamar`
+-- Struktur dari tabel `kelas_kamar`
 --
 
 CREATE TABLE `kelas_kamar` (
@@ -164,7 +163,7 @@ CREATE TABLE `kelas_kamar` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `kelas_kamar`
+-- Dumping data untuk tabel `kelas_kamar`
 --
 
 INSERT INTO `kelas_kamar` (`id_kelas_kamar`, `nama_kelas_kamar`) VALUES
@@ -175,7 +174,7 @@ INSERT INTO `kelas_kamar` (`id_kelas_kamar`, `nama_kelas_kamar`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `reservasi`
+-- Struktur dari tabel `reservasi`
 --
 
 CREATE TABLE `reservasi` (
@@ -190,24 +189,18 @@ CREATE TABLE `reservasi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `reservasi`
+-- Dumping data untuk tabel `reservasi`
 --
 
 INSERT INTO `reservasi` (`id_reservasi`, `nama_reservasi`, `tlp_reservasi`, `alamat_reservasi`, `tgl_reservasi_masuk`, `tgl_reservasi_keluar`, `id_kamar`, `status_reservasi`) VALUES
-(1, 'yoga', '085210662437', 'river valley\r\n', '2019-11-27', '2019-11-28', 1, 2),
-(2, 'alamaheyyy', '098760987', 'semlaheyy', '2019-11-28', '2019-11-30', 44, 2),
-(3, 'anjay', '0862628682', 'anjay mabar\r\n', '2019-11-28', '2019-12-01', 43, 2),
-(4, 'tegetrg', '0850805', 'cfdsfds', '2019-11-29', '2019-11-30', 35, 2),
-(5, 'yoga', '085210662437', 'river valley\r\n', '2019-12-04', '2019-12-31', 1, 1),
-(6, 'malih', '0876788768', 'ciputat', '2019-12-05', '2019-12-07', 7, 2),
-(7, 'yoga', '085210662437', 'river valley', '2019-12-06', '2019-12-10', 42, 1),
-(8, 'Ahmad Sentosa', '08519283912', 'Jl. Hoseruya', '2019-12-10', '2019-12-11', 6, 1),
-(9, 'SarjanaKomedi', '0851928391', 'Jl. Hello World', '2020-01-01', '2020-01-02', 5, 0);
+(11, 'ferdy', '3123123123', 'tangsel', '2021-12-04', '2021-12-05', 2, 2),
+(12, 'charlie', '1212121212', 'Palembang', '2021-12-05', '2021-12-06', 10, 0),
+(13, 'henry', '123123123', 'Tangsel', '2021-12-04', '2021-12-05', 7, 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `reservasi_pembayaran`
+-- Struktur dari tabel `reservasi_pembayaran`
 --
 
 CREATE TABLE `reservasi_pembayaran` (
@@ -220,20 +213,18 @@ CREATE TABLE `reservasi_pembayaran` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `reservasi_pembayaran`
+-- Dumping data untuk tabel `reservasi_pembayaran`
 --
 
 INSERT INTO `reservasi_pembayaran` (`id_reservasi_pembayaran`, `tgl_pembayaran`, `nominal_pembayaran`, `uang_bayar`, `kembalian`, `id_reservasi`) VALUES
-(1, '2019-11-27', 981818, 1000000, 18182, 1),
-(2, '2019-11-28', 1137190, 2000000, 862810, 2),
-(3, '2019-11-28', 1705785, 1800000, 94215, 3),
-(4, '2019-12-03', 568595, 600000, 31405, 4),
-(5, '2019-12-05', 909090, 1000000, 90910, 6);
+(9, '2021-12-04', 981818, 1000000, 18182, 8),
+(10, '2021-12-04', 981818, 1000000, 18182, 9),
+(11, '2021-12-04', 981818, 1000000, 18182, 11);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `saran`
+-- Struktur dari tabel `saran`
 --
 
 CREATE TABLE `saran` (
@@ -245,7 +236,7 @@ CREATE TABLE `saran` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `saran`
+-- Dumping data untuk tabel `saran`
 --
 
 INSERT INTO `saran` (`id_saran`, `nama_saran`, `email_saran`, `tlp_saran`, `isi_saran`) VALUES
@@ -254,7 +245,7 @@ INSERT INTO `saran` (`id_saran`, `nama_saran`, `email_saran`, `tlp_saran`, `isi_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Struktur dari tabel `user`
 --
 
 CREATE TABLE `user` (
@@ -268,18 +259,21 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `user`
+-- Dumping data untuk tabel `user`
 --
 
 INSERT INTO `user` (`id_user`, `nama_user`, `email_user`, `tlp_user`, `username_user`, `password_user`, `id_user_group`) VALUES
 (1, 'admin_hotel', 'testing@gmail.com', 85210662437, 'admin', '21232f297a57a5a743894a0e4a801fc3', 1),
 (2, 'operator', 'operator@testing.com', 643139439, 'operator', '4b583376b2767b923c3e1da60d10de59', 2),
-(3, 'yoga', 'arifincaesar@gmail.com', 85210662437, 'yoga', '28fab75dc1f392d731b3f54cf09ae212', 2);
+(4, 'christ', 'christian@gmail.com', 213123123, 'user', 'ee11cbb19052e40b07aac0ca060c23ee', 3),
+(6, 'ferdy', 'ferdy', 8123, 'fer', '202cb962ac59075b964b07152d234b70', 3),
+(7, 'charlie', 'charlie@gmail.com', 12121212121, 'charlie', 'bf779e0933a882808585d19455cd7937', 3),
+(8, 'henry', 'henry@gmail.com', 123123123, 'henry', '027e4180beedb29744413a7ea6b84a42', 3);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user_group`
+-- Struktur dari tabel `user_group`
 --
 
 CREATE TABLE `user_group` (
@@ -288,116 +282,117 @@ CREATE TABLE `user_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `user_group`
+-- Dumping data untuk tabel `user_group`
 --
 
 INSERT INTO `user_group` (`id_user_group`, `nama_user_group`) VALUES
 (1, 'admin'),
-(2, 'operator');
+(2, 'operator'),
+(3, 'user');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `kamar`
+-- Indeks untuk tabel `kamar`
 --
 ALTER TABLE `kamar`
   ADD PRIMARY KEY (`id_kamar`);
 
 --
--- Indexes for table `kamar_gambar`
+-- Indeks untuk tabel `kamar_gambar`
 --
 ALTER TABLE `kamar_gambar`
   ADD PRIMARY KEY (`id_kamar_gambar`);
 
 --
--- Indexes for table `kelas_kamar`
+-- Indeks untuk tabel `kelas_kamar`
 --
 ALTER TABLE `kelas_kamar`
   ADD PRIMARY KEY (`id_kelas_kamar`);
 
 --
--- Indexes for table `reservasi`
+-- Indeks untuk tabel `reservasi`
 --
 ALTER TABLE `reservasi`
   ADD PRIMARY KEY (`id_reservasi`);
 
 --
--- Indexes for table `reservasi_pembayaran`
+-- Indeks untuk tabel `reservasi_pembayaran`
 --
 ALTER TABLE `reservasi_pembayaran`
   ADD PRIMARY KEY (`id_reservasi_pembayaran`);
 
 --
--- Indexes for table `saran`
+-- Indeks untuk tabel `saran`
 --
 ALTER TABLE `saran`
   ADD PRIMARY KEY (`id_saran`);
 
 --
--- Indexes for table `user`
+-- Indeks untuk tabel `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id_user`);
 
 --
--- Indexes for table `user_group`
+-- Indeks untuk tabel `user_group`
 --
 ALTER TABLE `user_group`
   ADD PRIMARY KEY (`id_user_group`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `kamar`
+-- AUTO_INCREMENT untuk tabel `kamar`
 --
 ALTER TABLE `kamar`
   MODIFY `id_kamar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
--- AUTO_INCREMENT for table `kamar_gambar`
+-- AUTO_INCREMENT untuk tabel `kamar_gambar`
 --
 ALTER TABLE `kamar_gambar`
   MODIFY `id_kamar_gambar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 
 --
--- AUTO_INCREMENT for table `kelas_kamar`
+-- AUTO_INCREMENT untuk tabel `kelas_kamar`
 --
 ALTER TABLE `kelas_kamar`
   MODIFY `id_kelas_kamar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `reservasi`
+-- AUTO_INCREMENT untuk tabel `reservasi`
 --
 ALTER TABLE `reservasi`
-  MODIFY `id_reservasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_reservasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT for table `reservasi_pembayaran`
+-- AUTO_INCREMENT untuk tabel `reservasi_pembayaran`
 --
 ALTER TABLE `reservasi_pembayaran`
-  MODIFY `id_reservasi_pembayaran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_reservasi_pembayaran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT for table `saran`
+-- AUTO_INCREMENT untuk tabel `saran`
 --
 ALTER TABLE `saran`
   MODIFY `id_saran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `user_group`
+-- AUTO_INCREMENT untuk tabel `user_group`
 --
 ALTER TABLE `user_group`
-  MODIFY `id_user_group` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_user_group` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
