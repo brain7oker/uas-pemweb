@@ -61,13 +61,13 @@
                   <div class="form-group">
                     <label class="col-lg-12">Username</label>
                        <div class="col-md-9">
-                            <input type="text" class="form-control" placeholder="masukkan nama user" name="username_user">
+                            <input type="text" class="form-control" placeholder="masukkan username" name="username_user">
                         </div>
                   </div> 
                   <div class="form-group">
                     <label class="col-lg-12">Password</label>
                        <div class="col-md-9">
-                            <input type="Password" class="form-control" placeholder="masukkan nama user" name="password_user">
+                            <input type="Password" class="form-control" placeholder="masukkan password" name="password_user">
                         </div>
                   </div>
                    <div class="form-group">
