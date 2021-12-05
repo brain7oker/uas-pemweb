@@ -6,7 +6,7 @@ class Register extends CI_Controller{
  
 	function index(){
 
-		$session = array('id_user_group' => $d->id_user_group, 'nama_user' => $d->nama_user, 'status' => 'loginadmin');
+		$session = array('id_user_group' => $id_user_group, 'nama_user' => $nama_user, 'status' => 'loginadmin');
 				$this->session->set_userdata($session);
 				redirect(base_url().'admin/register');
 	}
